@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      border: 2px solid #f76707;
+      border-radius: 5px;
+      background-color: #fff4e6;
+      display: grid;
+      grid-template-columns: 150px 200px auto;
+      grid-template-rows: 100px 50px;
+      grid-template-areas:
+        "areaA areaB areaD"
+        "areaA areaC areaD"
+      ;
+      gap: 10px;
+      /* grid-template-areas: ; */
+    }
+
+    .itemA {
+      grid-area: areaA;
+      background: #f8BBD0;
+      grid-column: 100px;
+      grid-row: 150px;
+    }
+
+    .itemB {
+      grid-area: areaB;
+      background: #c5cae9;
+    }
+
+    .itemC {
+      grid-area: areaC;
+      background: #b3e5fc;
+    }
+
+    .itemD {
+      grid-area: areaD;
+      background: #cbe6c9;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="itemA">要素A</div>
+    <div class="itemB">要素B</div>
+    <div class="itemC">要素C</div>
+    <div class="itemD">要素D</div>
+  </div>
+</body>
+
+</html>
